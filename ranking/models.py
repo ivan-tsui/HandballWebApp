@@ -9,12 +9,16 @@ class Ranking(models.Model):
             ('A', 'A'),
             ('B', 'B'),
             ('C', 'C'),
+            ('Recreational', 'Recreational'),
         )
     )
 
-    numberOfPlayers = models.IntegerField(
+    number_of_players = models.IntegerField(
         default=0,
     )
 
     class Meta:
         verbose_name = 'Ranked Tier'
+
+    def __str__(self):
+        return self.tier

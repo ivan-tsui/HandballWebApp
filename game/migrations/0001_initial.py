@@ -12,14 +12,12 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Ranking',
+            name='Game',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('tier', models.CharField(choices=[('A', 'A'), ('B', 'B'), ('C', 'C'), ('Recreational', 'Recreational')], default='C', max_length=1)),
-                ('number_of_players', models.IntegerField(default=0)),
+                ('tournament_name', models.TextField(default='', max_length=50)),
+                ('type', models.CharField(choices=[('Singles', 'Singles'), ('Doubles', 'Doubles')], max_length=7)),
+                ('location', models.CharField(default='', max_length=20)),
             ],
-            options={
-                'verbose_name': 'Ranked Tier',
-            },
         ),
     ]

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/HandballWebApp.iml" filepath="$PROJECT_DIR$/.idea/HandballWebApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Kaleidoscope/.idea/Kaleidoscope.iml" filepath="$PROJECT_DIR$/../../Kaleidoscope/.idea/Kaleidoscope.iml" />
+    </modules>
+  </component>
+</project>
